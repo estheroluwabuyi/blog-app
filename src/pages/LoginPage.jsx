@@ -1,10 +1,9 @@
 import { useState } from "react";
 import FormBtn from "../components/FormBtn";
+import AuthRedirect from "../components/AuthRedirect";
 
 function LoginPage() {
   const [email, setEmail] = useState("");
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
   const [password, setPassword] = useState("");
 
   return (
@@ -27,6 +26,10 @@ function LoginPage() {
       />
 
       <FormBtn>Continue Reading</FormBtn>
+
+      <AuthRedirect to="signup" text="Don't have an account?">
+        Sign up
+      </AuthRedirect>
     </form>
   );
 }

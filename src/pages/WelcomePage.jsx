@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import AuthRedirect from "../components/AuthRedirect";
 
 function WelcomePage() {
   return (
@@ -8,14 +9,16 @@ function WelcomePage() {
         <br />
         One place to read them all.
       </h1>
-      <ul className="welcome-links">
-        <li className="signup-btn">
+
+      <div className="welcome-links">
+        <div className="signup-btn">
           <Link to="signup">Sign up free</Link>
-        </li>
-        <li className="login-btn">
-          <Link to="login">Login</Link>
-        </li>
-      </ul>
+        </div>
+
+        <AuthRedirect to="login" text="Already have an account?">
+          Login
+        </AuthRedirect>
+      </div>
     </div>
   );
 }

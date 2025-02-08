@@ -1,5 +1,6 @@
 import { useState } from "react";
 import FormBtn from "../components/FormBtn";
+import AuthRedirect from "../components/AuthRedirect";
 
 function SignupPage() {
   const [email, setEmail] = useState("");
@@ -40,6 +41,10 @@ function SignupPage() {
       />
 
       <FormBtn>Start Reading</FormBtn>
+
+      <AuthRedirect to="login" text="Already have an account?">
+        Login
+      </AuthRedirect>
     </form>
   );
 }

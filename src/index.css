@@ -46,9 +46,6 @@ img {
 
 /* WELCOME PAGE */
 .welcome {
-  /* position: relative;
-  top: 0;
-  left: 0; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,9 +81,14 @@ img {
   margin-bottom: 2rem;
 }
 
-.login-btn {
-  text-decoration: underline;
+.auth-redirect {
   letter-spacing: 1px;
+  text-align: center;
+}
+
+.auth-redirect span {
+  text-decoration: underline;
+  font-weight: 700;
 }
 
 .form-btn:hover,
@@ -136,42 +138,12 @@ img {
   margin-bottom: 2rem;
   margin-top: 1.5rem;
   font-size: inherit;
-}
-
-/* FORM  */
-/* .register-form,
-.login-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background: #a82929;
-  gap: 1rem;
-}
-
-.input {
-  width: 70%;
-  padding: 1rem;
-  border-radius: 5px;
-  border: 1px solid #000;
-  background: #fff;
-  border: none;
-  outline: none;
-}
-
-.form-btn {
-  width: 40%;
-  padding: 1rem;
-  border-radius: 5px;
-  border: 2px solid #000;
-  background: #fff;
-  outline: none;
   cursor: pointer;
-  transition: all 0.3s linear;
 }
 
-.form-btn:hover {
-  background: #000;
-  color: #fff;
-} */
+/* NO PAGE FOUND */
+.no-page {
+  background: var(--primary-bg-color);
+  height: 100vh;
+  padding: 2rem;
+}
