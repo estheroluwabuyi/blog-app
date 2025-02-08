@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import LoginPage from "./LoginPage";
-import SignupPage from "./SignupPage";
 
 function WelcomePage() {
   return (
@@ -11,10 +9,10 @@ function WelcomePage() {
         One place to read them all.
       </h1>
       <ul className="welcome-links">
-        <li className="signup">
+        <li className="signup-btn">
           <Link to="signup">Sign up free</Link>
         </li>
-        <li className="login">
+        <li className="login-btn">
           <Link to="login">Login</Link>
         </li>
       </ul>
