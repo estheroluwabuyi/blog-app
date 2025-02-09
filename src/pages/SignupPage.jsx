@@ -17,6 +17,7 @@ function SignupPage() {
         className="input"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
+        required
       />
       <input
         type="text"
@@ -24,6 +25,7 @@ function SignupPage() {
         className="input"
         value={firstName}
         onChange={(e) => setFirstName(e.target.value)}
+        required
       />
       <input
         type="text"
@@ -31,6 +33,7 @@ function SignupPage() {
         className="input"
         value={lastName}
         onChange={(e) => setLastName(e.target.value)}
+        required
       />
       <input
         type="password"
@@ -38,6 +41,7 @@ function SignupPage() {
         className="input"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
+        required
       />
 
       <FormBtn>Start Reading</FormBtn>

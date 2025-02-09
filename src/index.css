@@ -81,9 +81,13 @@ img {
   margin-bottom: 2rem;
 }
 
+.error-message,
+.auth-redirect {
+  text-align: center;
+}
+
 .auth-redirect {
   letter-spacing: 1px;
-  text-align: center;
 }
 
 .auth-redirect span {
@@ -94,6 +98,7 @@ img {
 .form-btn:hover,
 .signup-btn:hover {
   transform: scale(1.05);
+  background: #4660d3;
 }
 
 /* FORM */
@@ -146,4 +151,15 @@ img {
   background: var(--primary-bg-color);
   height: 100vh;
   padding: 2rem;
+}
+
+/* DASHBOARD */
+.dashboard {
+  background: var(--primary-bg-color);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  color: var(--primary-font-color);
 }
