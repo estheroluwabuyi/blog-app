@@ -4,13 +4,14 @@ function NavLinks() {
   return (
     <ul className="nav-links">
       <li>
-        <NavLink to="/home">Home</NavLink>
+        <NavLink to="/">Home</NavLink>
       </li>
       <li>
         <NavLink to="/blog">Blog</NavLink>
       </li>
       <li className="nav-links--single">
         <NavLink to="/single">Single Post</NavLink>
+        {/* <NavLink to="/single:id">Single Post</NavLink> */}
       </li>
       <li>
         <NavLink to="/author">Pages</NavLink>
