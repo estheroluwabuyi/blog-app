@@ -16,11 +16,11 @@ function LoginPage() {
 
   const handleFocus = () => {
     setErrorMessage("");
+      setErrorMessage("")
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    console.log(787);
+   
 
     setLoading(true);
 

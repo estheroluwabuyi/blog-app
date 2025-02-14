@@ -7,9 +7,21 @@ function SignupPage() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [password, setPassword] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
+
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log(787);
+    
+  }
+
+
 
   return (
-    <form className="signup-form">
+    <form className="signup-form" onSubmit={handleSubmit}>
       <h1 className="signup-form-heading">Sign Up</h1>
       <input
         type="email"
