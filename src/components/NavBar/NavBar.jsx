@@ -1,15 +1,13 @@
 import Logo from "./Logo";
 import NavLinks from "./NavLinks";
-import Search from "./Search";
-import ThemeToggle from "./ThemeToggle";
+import SearchToggle from "./SearchToggle";
 
 function NavBar() {
   return (
     <nav className="nav-bar">
       <Logo />
       <NavLinks />
-      <Search />
-      {/* <ThemeToggle /> */}
+      <SearchToggle />
     </nav>
   );
 }

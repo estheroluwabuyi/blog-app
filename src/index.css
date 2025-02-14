@@ -57,10 +57,14 @@ img {
 
 /* NAVBAR */
 .nav-bar {
+  position: fixed;
   display: flex;
+  width: 100%;
+  top: 0;
+  left: 0;
   justify-content: space-between;
   align-items: center;
-  padding: 3.2rem 0.5rem;
+  padding: 3.2rem 0.7rem;
   gap: 10px;
 }
 
@@ -97,6 +101,12 @@ img {
   font-size: var(--font-size-sm);
   width: 17rem;
   height: 3.6rem;
+}
+
+.search-toggle {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
 }
 
 .search-item {
