@@ -144,13 +144,10 @@ img {
 }
 
 /* HERO */
-.hero {
-}
 
 .hero-img {
   width: 100%;
   height: 600px;
-  /* height: auto; */
   padding-top: 10rem;
 }
 
@@ -216,9 +213,6 @@ img {
 
 .hero-card--name {
   font-weight: 500;
-}
-
-.hero-card--date {
 }
 
 /* WELCOME PAGE */
