@@ -1,5 +1,6 @@
 import HeroBgImg from "./HeroBgImg";
 import HeroCard from "./HeroCard";
+import AdCard from "../AdCard/AdCard";
 
 function Hero() {
   return (
@@ -8,6 +9,7 @@ function Hero() {
       <HeroCard heroCard="hero-card" heroCardImg="author.jpg">
         Jason Francisco
       </HeroCard>
+      <AdCard />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import Hero from "../HeroSection.jsx/Hero";
+import Hero from "../HeroSection/Hero";
 import NavBar from "../NavBar/NavBar";
 
 function Header() {
