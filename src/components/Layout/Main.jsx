@@ -85,12 +85,12 @@ const posts = [
     name: "Tracy Wilson",
   },
   {
-    img: "post8.jpg",
+    img: "post3.jpg",
     title: "Technology",
     texts:
       "The Impact of Technology on the Workplace: How Technology is Changing",
     avatar: "author3.jpg",
-    name: "Elizabeth Salvin",
+    name: "Elizabeth Slavin",
   },
   {
     img: "post7.jpg",
