@@ -1,85 +1,10 @@
-const posts = [
-  {
-    img: "homepage.jpg",
-    title: "Technology",
-    texts:
-      "The Impact of Technology on the Workplace: How Technology is Changing",
-    avatar: "author.jpg",
-    name: "Tracy Adams",
-  },
-  {
-    img: "homepage.jpg",
-    title: "Technology",
-    texts:
-      "The Impact of Technology on the Workplace: How Technology is Changing",
-    avatar: "author.jpg",
-    name: "Tracy Adams",
-  },
-  {
-    img: "homepage.jpg",
-    title: "Technology",
-    texts:
-      "The Impact of Technology on the Workplace: How Technology is Changing",
-    avatar: "author.jpg",
-    name: "Tracy Adams",
-  },
-  {
-    img: "homepage.jpg",
-    title: "Technology",
-    texts:
-      "The Impact of Technology on the Workplace: How Technology is Changing",
-    avatar: "author.jpg",
-    name: "Tracy Adams",
-  },
-  {
-    img: "homepage.jpg",
-    title: "Technology",
-    texts:
-      "The Impact of Technology on the Workplace: How Technology is Changing",
-    avatar: "author.jpg",
-    name: "Tracy Adams",
-  },
-  {
-    img: "homepage.jpg",
-    title: "Technology",
-    texts:
-      "The Impact of Technology on the Workplace: How Technology is Changing",
-    avatar: "author.jpg",
-    name: "Tracy Adams",
-  },
-  {
-    img: "homepage.jpg",
-    title: "Technology",
-    texts:
-      "The Impact of Technology on the Workplace: How Technology is Changing",
-    avatar: "author.jpg",
-    name: "Tracy Adams",
-  },
-  {
-    img: "homepage.jpg",
-    title: "Technology",
-    texts:
-      "The Impact of Technology on the Workplace: How Technology is Changing",
-    avatar: "author.jpg",
-    name: "Tracy Adams",
-  },
-  {
-    img: "homepage.jpg",
-    title: "Technology",
-    texts:
-      "The Impact of Technology on the Workplace: How Technology is Changing",
-    avatar: "author.jpg",
-    name: "Tracy Adams",
-  },
-];
-
-function PostLists() {
+function PostLists({ post, visibleCount }) {
   return (
     <div className="posts">
       <h2 className="posts-title">Latest Post</h2>
 
       <section className="posts-cards">
-        {posts.map((post, index) => (
+        {post.slice(0, visibleCount).map((post, index) => (
           <div key={index} className="post-card">
             <div className="posts-card--img">
               <img src={post.img} alt="bg" width="150" height="150" />
@@ -111,3 +36,28 @@ function PostLists() {
 }
 
 export default PostLists;
+
+/*
+// useEffect(function () {
+  //   async function getPostDetails() {
+  //     try {
+  //       const res = await fetch(
+  //         ` https://artistic-insights-alley-api.onrender.com/api/posts/`
+  //       );
+
+  //       if (!res.ok) {
+  //         throw new Error(`HTTP error! Status: ${res.status}`);
+  //       }
+
+  //       const data = await res.json();
+  //       console.log(data);
+
+  //       // setPost(data);
+  //     } catch (error) {
+  //       console.error("Error fetching posts:", error);
+  //     }
+  //   }
+
+  //   getPostDetails();
+  // }, [post]);
+ */
